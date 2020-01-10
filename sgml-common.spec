@@ -1,6 +1,6 @@
 Name: sgml-common
 Version: 0.6.3
-Release: 32%{?dist}
+Release: 33%{?dist}
 Group: Applications/Text
 
 Summary: Common SGML catalog and DTD files
@@ -128,6 +128,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n xml-common
 %defattr (-,root,root,-)
+%doc AUTHORS NEWS ChangeLog COPYING README
 %dir %{_sysconfdir}/xml
 %dir %{_sysconfdir}/sgml/docbook
 %config(noreplace) %verify(not md5 size mtime) %{_sysconfdir}/xml/catalog
@@ -138,6 +139,10 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_datadir}/xml
 
 %changelog
+* Tue Mar 25 2014 Ondrej Vasik <ovasik@redhat.com> 0.6.3-33
+- add missing basic documentation and license file to the
+  xml-common subpackage (#613637)
+
 * Thu Jun 17 2010 Ondrej Vasik <ovasik@redhat.com> 0.6.3-32
 - remove unapplied patches, remove versioned BR(#605114)
 

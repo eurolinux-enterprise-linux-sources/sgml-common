@@ -2,7 +2,7 @@
 
 Name: sgml-common
 Version: 0.6.3
-Release: 39%{?dist}
+Release: 38%{?dist}
 Group: Applications/Text
 
 Summary: Common SGML catalog and DTD files
@@ -166,9 +166,6 @@ fi
 %{_datadir}/xml/xml.xsd
 
 %changelog
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.6.3-39
-- Mass rebuild 2013-12-27
-
 * Thu Oct 11 2012 Ondrej Vasik <ovasik@redhat.com> 0.6.3-38
 - get rid of the explicit automake14 requirement
 
